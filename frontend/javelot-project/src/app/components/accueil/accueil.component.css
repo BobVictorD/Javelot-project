@@ -1,0 +1,26 @@
+#accueil-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#accueil-container > div {
+    height: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: gray solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#accueil-container > div:hover {
+    background-color: whitesmoke;
+}

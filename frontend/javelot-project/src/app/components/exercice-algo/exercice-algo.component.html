@@ -1,0 +1,23 @@
+<div id="exercice-algo-container">
+    <div id="title-ea">
+        <div id="accueil-link" routerLink="/accueil">
+            Accueil
+        </div>
+        <div style="width: 100%; align-items: center;">
+            Exercice d'algorithmie
+        </div>
+    </div>
+    <div class="content">
+        <div id="encode">
+            <input type="text" pInputText [(ngModel)]="value"/>
+            <p-button label="encode" (click)="encode()"></p-button>
+            <span>{{hash$ | async}}</span>
+        </div>
+        <div id="decode">
+            <p-inputNumber [(ngModel)]="hash" mode="decimal"/>
+            <p-button label="decode" (click)="decode()"></p-button>
+            <span>{{value$ | async}}</span>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+  sng-postgres:
+    image: postgres:15.3-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - "POSTGRES_DB=javelot"
+      - "POSTGRES_PASSWORD=javelot"
+      - "POSTGRES_USER=javelot"
+    container_name: Bbdd-javelot
+    restart: unless-stopped

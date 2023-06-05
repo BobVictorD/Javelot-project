@@ -1,0 +1,48 @@
+#exercice-algo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#title-ea {
+    padding: 5px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+
+}
+
+#title-ea > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#accueil-link {
+    cursor: pointer;
+    height: 100%;
+    width: 100px;
+    padding-left: 5px;
+}
+
+#accueil-link:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content > div > * {
+    padding: 10px;
+}

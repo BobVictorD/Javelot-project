@@ -1,0 +1,19 @@
+<div id="donnee-meteo-container" *ngIf="villeVue != undefined">
+    <div id="title-dm">
+        <div id="accueil-link" routerLink="/accueil">
+            Accueil
+        </div>
+        <div style="width: 100%; align-items: center;">
+            Données Méteo
+        </div>
+    </div>
+    <div id="info-ville-container">
+        <span>Nom: {{villeVue.nom}}</span>
+        <span>Latitude: {{villeVue.latitude}}</span>
+        <span>Longitude: {{villeVue.longitude}}</span>
+    </div>
+    <div id="graph-container">
+        <p-chart type="line" [data]="villeVue.data" [options]="options"></p-chart>
+    </div>
+</div>
+
